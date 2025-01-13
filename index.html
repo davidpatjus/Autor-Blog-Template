@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Personal blog by David Patiño sharing insights on web development, technology, and personal growth." />
+    <meta name="author" content="David Patiño" />
+		
+		<title>David Patiño - Personal Blog</title>
+		
+		<!-- SWIPER JS -->
+		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
+		
+		<!-- TAILWIND CSS OUTPUT -->
+		<link href="./src/styles/output.css" rel="stylesheet" />
+		
+		<!-- CUSTOM CSS -->
+    <link href="./src/styles/styles.css" rel="stylesheet" />
+		
+  </head>
+
+  <body class="min-h-screen bg-gray-50">
+
+    <!-- Navigation -->
+		<header id="NavBar"></header>
+
+    <main>
+
+      <!-- Hero Section -->
+				<section class="bg-gradient-to-b from-white to-gray-100 py-14">
+					<div class="container mx-auto px-6 text-center">
+						<!-- Blog Title -->
+						<p class="text-sm uppercase tracking-wide font-semibold text-gray-500 mb-2">
+							Blog
+						</p>
+						<h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+							Bienvenido a nuestro blog
+						</h1>
+						<p class="text-lg text-gray-600 max-w-3xl mx-auto">
+							Ultimas publicaciones y noticias sobre diseño, tecnología y desarrollo web.
+						</p>
+					</div>
+			
+					<!-- Featured Post -->
+					<div class="mt-8 container mx-auto px-6">
+						<div class="relative">
+							<img
+								src="/images/heroImage.jpg"
+								alt="Featured blog post image"
+								class="w-full h-full object-cover rounded-md"
+							/>
+							<div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black via-transparent to-transparent px-6 py-4 text-white">
+								<p class="text-sm mb-2">20 Enero 2022</p>
+								<h2 class="text-2xl font-semibold mb-2">Interfaces de usuario inteligentes</h2>
+								<p class="text-sm mb-4">
+									Buscar impresionar a los usuarios con interfaces de usuario inteligentes.
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+
+      <!-- Featured Posts -->
+				<section class="py-16 bg-gradient-to-b from-gray-100 to-gray-50">
+					<div class="container mx-auto flex justify-center flex-col items-center mb-8 space-y-2">
+							<h1 class="text-4xl md:text-5xl font-bold text-center">Publicaciones Recomendadas</h1>
+							<p class="text-gray-600 text-lg">Descubre los post recomendados</p>
+					</div>
+					<section id="carouselContainer" class="container mx-auto px-4 relative py-8">
+							<div class="relative">
+									<!-- Carrusel con Swiper -->
+									<div class="swiper">
+											<!-- Contenedor de las tarjetas -->
+											<div class="swiper-wrapper">
+													<!-- Tarjetas generadas dinámicamente -->
+											</div>
+									</div>
+
+									<!-- Indicadores -->
+									<div class="translate-y-10">
+											<div class="swiper-pagination text-black"></div>
+									</div>
+							</div>
+					</section>
+				</section>
+
+			<!-- About Autor -->
+				<section class="py-16 md:border-2 md:border-black md:mx-[2vw] rounded-2xl bg-white">
+					<div class="container mx-auto px-2">
+							<div class="flex flex-col md:flex-row items-center gap-12">
+									<div class="md:w-1/2">
+											<img src="https://placehold.co/400x400" alt="Foto del autor" class="rounded-lg shadow-lg">
+									</div>
+									<div class="md:w-1/2">
+											<h2 class="text-3xl font-bold mb-4">Sobre Mí</h2>
+											<p class="text-gray-600 mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+											
+											<!-- Estadísticas Personales -->
+											<div class="grid grid-cols-2 gap-4 mb-6">
+													<div class="text-center p-4 bg-gray-50 rounded-lg">
+															<span class="block text-2xl font-bold ">150+</span>
+															<span class="text-gray-600">Artículos Publicados</span>
+													</div>
+													<div class="text-center p-4 bg-gray-50 rounded-lg">
+															<span class="block text-2xl font-bold ">10k+</span>
+															<span class="text-gray-600">Lectores Mensuales</span>
+													</div>
+											</div>
+
+											<!-- Intereses y Especialidades -->
+											<div class="mb-6">
+													<h3 class="font-semibold mb-3">Especialidades</h3>
+													<div class="flex flex-wrap gap-2">
+															<span class="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm">Escritura Creativa</span>
+															<span class="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm">Fotografía</span>
+															<span class="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm">Arte Digital</span>
+															<span class="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm">Diseño Web</span>
+													</div>
+											</div>
+
+											<div class="flex gap-4">
+													<a href="#" class=" hover:text-gray-800">
+														<svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+													</a>
+													<a href="#" class=" hover:text-gray-800">
+														<svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+													</a>
+													<a href="#" class=" hover:text-gray-800">
+														<svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+													</a>
+											</div>
+									</div>
+							</div>
+					</div>
+				</section>
+
+			<!-- Gallery -->
+				<section class="bg-gray-50 py-16 bg-gradient-to-b from-gray-50 to-white">
+					<div class="container mx-auto px-4">
+							<h2 class="text-3xl font-bold text-center mb-12">Mi Mundo Visual</h2>
+							<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+									<div class="gallery-item relative overflow-hidden rounded-lg aspect-square">
+											<img src="https://placehold.co/400x400" alt="Galería 1" class="w-full h-full object-cover">
+											<div class="gallery-overlay">
+													<p class="text-white">Explorando nuevas ideas</p>
+											</div>
+									</div>
+									<div class="gallery-item relative overflow-hidden rounded-lg aspect-square">
+											<img src="https://placehold.co/400x400" alt="Galería 2" class="w-full h-full object-cover">
+											<div class="gallery-overlay">
+													<p class="text-white">Momentos creativos</p>
+											</div>
+									</div>
+									<div class="gallery-item relative overflow-hidden rounded-lg aspect-square">
+											<img src="https://placehold.co/400x400" alt="Galería 3" class="w-full h-full object-cover">
+											<div class="gallery-overlay">
+													<p class="text-white">Detrás de escena</p>
+											</div>
+									</div>
+									<div class="gallery-item relative overflow-hidden rounded-lg aspect-square">
+											<img src="https://placehold.co/400x400" alt="Galería 4" class="w-full h-full object-cover">
+											<div class="gallery-overlay">
+													<p class="text-white">Inspiración diaria</p>
+											</div>
+									</div>
+							</div>
+					</div>
+				</section>
+
+			<!-- TimeLine -->
+				<section class="py-16 bg-gradient-to-b from-white to-gray-100 border-b border-t border-black">
+					<div class="container mx-auto px-4">
+							<h2 class="text-3xl font-bold text-center mb-12">Mi Trayectoria</h2>
+							<div class="max-w-3xl mx-auto">
+									<div class="timeline-item">
+											<div class="flex items-center mb-8">
+													<div class="timeline-dot"></div>
+													<div class="ml-4">
+															<h3 class="font-bold text-xl">2024</h3>
+															<p class="text-gray-600">Lanzamiento del blog personal</p>
+													</div>
+											</div>
+									</div>
+									<div class="timeline-item">
+											<div class="flex items-center mb-8">
+													<div class="timeline-dot"></div>
+													<div class="ml-4">
+															<h3 class="font-bold text-xl">2023</h3>
+															<p class="text-gray-600">Primera publicación viral</p>
+													</div>
+											</div>
+									</div>
+									<div class="timeline-item">
+											<div class="flex items-center mb-8">
+													<div class="timeline-dot"></div>
+													<div class="ml-4">
+															<h3 class="font-bold text-xl">2022</h3>
+															<p class="text-gray-600">Inicio en la escritura digital</p>
+													</div>
+											</div>
+									</div>
+							</div>
+					</div>
+				</section>
+
+			<!-- Creative Process -->
+				<section class="bg-gray-50 py-14">
+					<div class="container mx-auto px-4">
+							<h2 class="text-3xl font-bold text-center mb-12">Mi Proceso Creativo</h2>
+							<div class="grid md:grid-cols-3 gap-8">
+									<div class="process-card bg-white p-6 rounded-lg shadow-md">
+											<span class="text-4xl mb-4 block">🎯</span>
+											<h3 class="font-bold text-xl mb-3">Investigación</h3>
+											<p class="text-gray-600">Exploro tendencias, leo extensivamente y recopilo ideas inspiradoras.</p>
+									</div>
+									<div class="process-card bg-white p-6 rounded-lg shadow-md">
+											<span class="text-4xl mb-4 block">✍️</span>
+											<h3 class="font-bold text-xl mb-3">Creación</h3>
+											<p class="text-gray-600">Desarrollo contenido original y significativo basado en mis experiencias.</p>
+									</div>
+									<div class="process-card bg-white p-6 rounded-lg shadow-md">
+											<span class="text-4xl mb-4 block">🔄</span>
+											<h3 class="font-bold text-xl mb-3">Iteración</h3>
+											<p class="text-gray-600">Refino y mejoro constantemente basado en feedback y nuevos aprendizajes.</p>
+									</div>
+							</div>
+					</div>
+				</section>
+
+    </main>
+
+    <!-- Footer -->
+		<footer id="Footer"></footer>
+
+
+		<!-- Scripts -->
+		<script src="./src/components/NavBar.js" type="module"></script>
+		<script src="./src/components/Footer.js" type="module"></script>
+		<script src="./src/components/PostCarousel.js" type="module"></script>
+
+  </body>
+
+</html>

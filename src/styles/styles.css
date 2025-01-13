@@ -1,0 +1,163 @@
+/* Formateo De Estilos */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Fin Formateo De Estilos */
+
+
+/* Swiper JS */
+
+  /* Cambiar el color de los puntos */
+  .swiper-pagination-bullet {
+    background-color: #cccccc; /* Color predeterminado */
+    opacity: 1; /* Asegúrate de que no esté translúcido */
+  }
+
+  /* Cambiar el color del punto activo */
+  .swiper-pagination-bullet-active {
+    background-color: black; /* Color para el punto activo */
+    transform: scale(1.2); /* Aumentar el tamaño para destacarlo */
+    transition: all 0.3s ease; /* Animación suave */
+}
+
+/* Fin Swiper Js */
+
+
+/* Estilos para la galería */
+.gallery-item {
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+}
+
+.gallery-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .gallery-overlay {
+  opacity: 1;
+}
+
+/* Estilos para el timeline */
+.timeline-item {
+  position: relative;
+}
+
+.timeline-dot {
+  width: 16px;
+  height: 16px;
+  background-color: #000000;
+  border-radius: 50%;
+  position: relative;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: 7px;
+  top: 16px;
+  bottom: -8px;
+  width: 2px;
+  background-color: #e5e7eb;
+}
+
+.timeline-item:last-child::before {
+  display: none;
+}
+
+/* Estilos para las tarjetas de proceso */
+.process-card {
+  transition: all 0.3s ease;
+}
+
+.process-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para la página Sobre el Autor */
+.experience-dot {
+  width: 16px;
+  height: 16px;
+  background-color: #000000;
+  border-radius: 50%;
+  margin-top: 6px;
+}
+
+.experience-timeline > div {
+  position: relative;
+}
+
+.experience-timeline > div:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  left: 7px;
+  top: 24px;
+  bottom: -44px;
+  width: 2px;
+  background-color: #e5e7eb;
+}
+
+.skill-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.skill-level {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  width: var(--level);
+  background-color: black;
+  transition: width 1s ease-in-out;
+}
+
+.project-card {
+  background: white;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.social-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.social-link:hover {
+  transform: translateY(-3px);
+  color: #2563eb;
+}
