@@ -4,7 +4,7 @@ const navbar = `
       <div class="flex items-center justify-between">
         <!-- Logo -->
         <img
-          src="./public/logo.svg"
+          src="/logo.svg"
           alt="Logo"
           loading="lazy"
           class="w-auto h-6 md:h-10"
