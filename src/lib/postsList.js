@@ -1,7 +1,6 @@
 import { PostCard } from '../components/PostCard.js';
 import { fetchPosts } from './PostData.js';
 
-
 // Variables de control
 let isLoading = false;
 let currentPage = 1;

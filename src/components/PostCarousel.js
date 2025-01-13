@@ -1,4 +1,4 @@
-import { fetchPosts } from "../lib/PostData"; // Asegúrate de importar los datos dinámicamente
+import { fetchPosts } from "../lib/PostData"; 
 
 // Renderiza las tarjetas dinámicamente
 async function renderCards() {
@@ -6,6 +6,7 @@ async function renderCards() {
 
     // Obtener los datos desde la API
 	const PostData = await fetchPosts();
+	console.log("PostData", PostData);
 
   PostData.forEach((post) => {
 	const shortDescription = post.description.substring(0, 50) + '...';

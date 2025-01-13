@@ -1,7 +1,8 @@
 import { query } from './strapi.js'; // Usamos la función query para realizar las solicitudes
+import { mockPosts } from './PostData.js';
 
 // URL base de Strapi
-const STRAPI_HOST = "http://localhost:1337"
+const IMAGES_HOST = "http://localhost:1337"
 
 // Función para obtener el ID del post de la URL
 function getPostIdFromUrl() {
@@ -22,25 +23,28 @@ function getPostImage() {
 // Función para obtener un post por su ID desde Strapi
 async function fetchPostById(id) {
     try {        
-        const response = await getPosts(); 
-        const posts = response.data[0].Posts;
+        // const response = await getPosts(); 
+        // const posts = response.data[0].Posts;
 
-        const post = posts.find(post => post.id === Number(id));
+        // const post = posts.find(post => post.id === Number(id));
 
-        const imageResponse = await getPostImage();
-        const imageData = imageResponse.data[0].Posts;
+        // const imageResponse = await getPostImage();
+        // const imageData = imageResponse.data[0].Posts;
 
-        const postImage = imageData.find(image => image.id === Number(id)).image.url;
+        // const postImage = imageData.find(image => image.id === Number(id)).image.url;
 
-        return {
-            id: post.id,
-            title: post.title,
-            author: post.author,
-            date: post.date,
-            description: post.description,
-            tags: post.tags?.tags || [],
-            image: STRAPI_HOST + postImage || "",
-        };
+        // return {
+        //     id: post.id,
+        //     title: post.title,
+        //     author: post.author,
+        //     date: post.date,
+        //     description: post.description,
+        //     tags: post.tags?.tags || [],
+        //     image: IMAGES_HOST + postImage || "",
+        // };
+
+        const post = mockPosts.find(post => post.id === Number(id));
+        return post;
 
     } catch (error) {
         console.error('Error al obtener el post:', error);

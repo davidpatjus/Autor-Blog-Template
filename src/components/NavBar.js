@@ -4,7 +4,7 @@ const navbar = `
       <div class="flex items-center justify-between">
         <!-- Logo -->
         <img
-          src="/logo.svg"
+          src="public/logo.svg"
           alt="Logo"
           loading="lazy"
           class="w-auto h-6 md:h-10"
@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (navbarContainer) {
     navbarContainer.innerHTML = navbar;
 
-    // Menu toggle logic
+    // Alternar Menu
     const menuToggle = document.getElementById('menuToggle');
     const menu = document.getElementById('menu');
 

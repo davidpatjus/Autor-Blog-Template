@@ -33,7 +33,7 @@ const Footer = `
   </div>
 `;
 
-// Inserta el navbar en un contenedor con ID 'navbar'
+// Inserta el Footer en un contenedor con ID 'Footer'
 document.addEventListener('DOMContentLoaded', () => {
   const footerContainer = document.getElementById('Footer');
   if (footerContainer) {
