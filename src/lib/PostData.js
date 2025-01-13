@@ -13,7 +13,7 @@ const IMAGES_HOST = "http://localhost:1337";
 export const mockPosts = [
   {
     "id": 1,
-    image: "public/images/galaxy1.jpg",
+    image: "/images/galaxy1.jpg",
     title: "Lorem ipsum",
     author: "David Patiño",
     date: "2021-09-01",
@@ -23,7 +23,7 @@ export const mockPosts = [
   },
   {
     "id": 2,
-    image: "public/images/galaxy2.jpg",
+    image: "/images/galaxy2.jpg",
     title: "Lorem ipsum",
     author: "David Patiño",
     date: "2021-09-01",
@@ -33,7 +33,7 @@ export const mockPosts = [
   },
   {
     "id": 3,
-    image: "public/images/galaxy3.jpg",
+    image: "/images/galaxy3.jpg",
     title: "Lorem ipsum",
     author: "David Patiño",
     date: "2021-09-01",
@@ -43,7 +43,7 @@ export const mockPosts = [
   },
   {
     "id": 4,
-    image: "public/images/galaxy1.jpg",
+    image: "/images/galaxy1.jpg",
     title: "Lorem ipsum",
     author: "David Patiño",
     date: "2021-09-01",
@@ -53,7 +53,7 @@ export const mockPosts = [
   },
   {
     "id": 5,
-    image: "public/images/galaxy2.jpg",
+    image: "/images/galaxy2.jpg",
     title: "Lorem ipsum",
     author: "David Patiño",
     date: "2021-09-01",
@@ -63,7 +63,7 @@ export const mockPosts = [
   },
   {
     "id": 6,
-    image: "public/images/galaxy3.jpg",
+    image: "/images/galaxy3.jpg",
     title: "Lorem ipsum",
     author: "David Patiño",
     date: "2021-09-01",
@@ -73,7 +73,7 @@ export const mockPosts = [
   },
   {
     "id": 7,
-    image: "public/images/galaxy1.jpg",
+    image: "/images/galaxy1.jpg",
     title: "Lorem ipsum",
     author: "David Patiño",
     date: "2021-09-01",
@@ -83,7 +83,7 @@ export const mockPosts = [
   },
   {
     "id": 8,
-    image: "public/images/galaxy2.jpg",
+    image: "/images/galaxy2.jpg",
     title: "Lorem ipsum",
     author: "David Patiño",
     date: "2021-09-01",
@@ -93,7 +93,7 @@ export const mockPosts = [
   },
   {
     "id": 9,
-    image: "public/images/galaxy3.jpg",
+    image: "/images/galaxy3.jpg",
     title: "Lorem ipsum",
     author: "David Patiño",
     date: "2021-09-01",
@@ -103,7 +103,7 @@ export const mockPosts = [
   },
   {
     "id": 10,
-    image: "public/images/galaxy1.jpg",
+    image: "/images/galaxy1.jpg",
     title: "Lorem ipsum",
     author: "David Patiño",
     date: "2021-09-01",
@@ -113,7 +113,7 @@ export const mockPosts = [
   },
   {
     "id": 11,
-    image: "public/images/galaxy2.jpg",
+    image: "/images/galaxy2.jpg",
     title: "Lorem ipsum",
     author: "David Patiño",
     date: "2021-09-01",
@@ -123,7 +123,7 @@ export const mockPosts = [
   },
   {
     "id": 12,
-    image: "public/images/galaxy3.jpg",
+    image: "/images/galaxy3.jpg",
     title: "Lorem ipsum",
     author: "David Patiño",
     date: "2021-09-01",
