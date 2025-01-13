@@ -24,9 +24,9 @@ const navbar = `
         <!-- Navigation Links -->
         <ul id="menu" class="hidden md:flex md:space-x-6 space-y-2 md:space-y-0 absolute md:static top-14 left-0 w-full md:w-auto bg-white md:bg-transparent shadow-md md:shadow-none md:flex-row flex-col z-50">
           <li><a href="/" class="text-gray-700 md:text-lg font-semibold hover:text-black transition-colors block px-5 py-2">Inicio</a></li>
-          <li><a href="/blogs" class="text-gray-700 md:text-lg font-semibold hover:text-black transition-colors block px-5 py-2">Artículos</a></li>
-          <li><a href="/about" class="text-gray-700 md:text-lg font-semibold hover:text-black transition-colors block px-5 py-2">Autor</a></li>
-          <li><a href="/contact" class="text-gray-700 md:text-lg font-semibold hover:text-black transition-colors block px-5 py-2">Contacto</a></li>
+          <li><a href="./blogs" class="text-gray-700 md:text-lg font-semibold hover:text-black transition-colors block px-5 py-2">Artículos</a></li>
+          <li><a href="./about" class="text-gray-700 md:text-lg font-semibold hover:text-black transition-colors block px-5 py-2">Autor</a></li>
+          <li><a href="./contact" class="text-gray-700 md:text-lg font-semibold hover:text-black transition-colors block px-5 py-2">Contacto</a></li>
         </ul>
       </div>
     </nav>
